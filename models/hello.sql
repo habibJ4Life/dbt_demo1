@@ -1,0 +1,1 @@
+select "hello dbt + Bigquery" as message 
