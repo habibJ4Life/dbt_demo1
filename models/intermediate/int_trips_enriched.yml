@@ -1,0 +1,9 @@
+version: 2
+models:
+  - name: int_trips_enriched
+    description: "Vue enrichie issue du staging : dérivés de date/heure et labels"
+    columns:
+      - name: pickup_date
+        tests: [not_null]
+      - name: total_amount
+        tests: [not_null]

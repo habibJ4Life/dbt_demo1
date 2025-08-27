@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: fct_trips_daily
+    description: "Table de faits journalière des courses de taxi (agrégations par jour)"
+    columns:
+      - name: pickup_date
+        description: "Jour de la course"
+        tests:
+          - not_null
+          - unique
+      - name: trips_count
+        description: "Nombre total de trajets dans la journée"
+        tests:
+          - not_null
+      - name: revenue_sum
+        description: "Revenu total (somme des montants)"
+        tests:
+          - not_null
